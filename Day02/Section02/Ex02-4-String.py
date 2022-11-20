@@ -1,8 +1,8 @@
 '''
-문자열(String)
-    하나이상 연속된 문자(character)들의 나열.
-    파이썬에서 문자열 자료형은 큰따옴표(" ")
-    또는 작은 따옴표(' ')사이에 위치.
+    문자열(String):
+        하나이상 연속된 문자(character)들의 나열.
+        파이썬에서 문자열 자료형은 큰 따옴표(" ")
+        또는 작은 따옴표(' ')사이에 위치.
 '''
 # 'Hello' 와 "Hello" 동일
 print('Hello' == "Hello")
@@ -17,8 +17,8 @@ print(a)
 [여러줄 문자열]
     세개의 따옴표를 사용하여 변수에 여러줄 문자열 할당
 '''
-a = """피카츄,라이츄,파이리,꼬부기,
-버터플,야도란,피존투,또가스
+a = """피카츄, 라이츄, 파이리, 꼬부기,
+버터플, 야도란, 피존투, 또가스
 """
 print(a)
 
@@ -31,6 +31,7 @@ print(a)
 '''
 a = "Hello"
 print(a[1])
+print(a[1] == a[-4])
 
 '''
 [문자열 슬라이싱]
@@ -48,16 +49,15 @@ print(a.upper())
 # 소문자
 print(a.lower())
 
-#문자열 바꾸기
-a = ""
-print()
+# 문자열 바꾸기
+a = "Hello, World"
+print(a.replace("H", "J"))
 
-#문자열 연결
+# 문자열 연결
 a = "Hello"
 b = "World"
-c =  a + b
+c = a + b
 print(c)
 
-#NoneType
-d = None
-pirnt(type(d))
+c = a + " " + b
+print(c)
