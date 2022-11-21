@@ -26,10 +26,10 @@ print(type(x))
 x = 1j
 print(type(x))
 # list
-x = ["피카츄","라이츄","파이리"]
+x = ["피카츄", "라이츄", "파이리"]
 print(type(x))
 # tuple
-x = ("피카츄","라이츄","파이리")
+x = ("피카츄", "라이츄", "파이리")
 print(type(x))
 # range
 x = range(6)

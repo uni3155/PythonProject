@@ -32,3 +32,4 @@ thistuple1 = ("피카츄", "라이츄", "파이리", "꼬부기")
 thistuple2 = ("버터플", "야도란", "피존투", "또가스")
 thistuple3 = thistuple1 + thistuple2
 print(thistuple3)
+
