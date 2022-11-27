@@ -2,10 +2,10 @@
 개요 : 반지름을 전달하면 원의 넓이를 반환하는 get_area() 함수
 '''
 
-#math 모듈 포함
+# math 모듈 포함
 import math
 
-#get_area() 함수 정의
+# get_area() 함수 정의
 def get_area(radius):
     """반지름을 입력 받아서 원의 넓이를 반환하는 get_area() 함수"""
     area = math.pi * math.pow(radius, 2)

@@ -12,7 +12,7 @@
   - next -> next ...설치
   
 - Git 설치
-  - git-scm.com/downloads
+  - https://git-scm.com/downloads
   - 구글에서 Git 다운로드 검색
   - Download for Windows 클릭 -> OS 환경에 맞는 git 다운로드 (64-bit Git for Windows Setup.)
   - next -> next ...설치
