@@ -52,7 +52,7 @@ while True:#틀리면 계속 실행
             else:
                 print('일치하지 않습니다! 다시 입력해 주세요!')
         else:
-            print('영문,숫자 포함 8자이상 입력해 주세요!')
+            print('패스워드는 영문,숫자 포함 8자이상 입력해 주세요!')
     else:
         print('아이디를 3글자 이상 입력하세요.')
     def login(member):
