@@ -33,18 +33,20 @@
 '''
 def login(member):
     while member:
-        login_id = input('아이디를 입력하세요.>>>')
-        if login_id == id:
-            login_pw = input('패스워드를 입력하세요.>>>')
-            if login_pw == pwd:
-                print("로그인 성공!\n" + id + "님,반갑습니다:)")
-                break
-            else:
-                print('패스워드가 일치하지 않습니다.')
+        login_id = input('아이디를 입력해 주세요.>>>')
+        if id == login_id:
+            while True: #아이디 아닌 패스워드 바로가기
+                login_pw = input('패스워드를 입력해 주세요.>>>')
+                if pwd == login_pw:
+                    print("로그인 성공!\n" + id + "님,반갑습니다:)")
+                    break
+                else:
+                    print('패스워드가 일치하지 않습니다.')
+            break   #종료후 아이디로 튀는 문제해결
         else:
             print('아이디가 일치하지 않습니다.')
 
-while True:#틀리면 계속 실행
+while True:
     id = input('아이디를 입력하세요.(3글자 이상) >>>')
     id_count = len(id)
     if id_count >= 3:
@@ -56,15 +58,18 @@ while True:#틀리면 계속 실행
                 ch_count += 1
             elif ch.isnumeric():
                 num_count += 1
-        if ch_count > 0 and num_count > 0 and len(pwd) >= 8:
-            check = input('패스워드 다시한번 입력하세요 >>>')
-            if pwd == check:
-                print('회원가입 완료!!')
-                login(True)
-                break
+        while True: #아이디 아닌 패스워드 바로가기
+            if ch_count > 0 and num_count > 0 and len(pwd) >= 8:
+                check = input('패스워드 다시한번 입력하세요 >>>')
+                if pwd == check:
+                    print('회원가입 완료!!')
+                    login(True)
+                    break
+                else:
+                    print('일치하지 않습니다.다시한번 입력하세요.')
             else:
-                print('일치하지 않습니다.다시한번 입력하세요.')
-        else:
-            print('패스워드는 영문,숫자 포함 8자이상 입력해 주세요!')
+                print('패스워드는 영문,숫자 포함 8자이상 입력해 주세요!')
+        break   #종료후 아이디로 튀는 문제해결
     else:
         print('아이디를 3글자 이상 입력하세요.')
+
