@@ -28,10 +28,12 @@ s = 'apple'
 result = s.find('p')
 print(result)
 
+# 없는값 find -1
 s = 'apple'
 result = s.find('z')
-if result == -1:    # 없는값 find -1
+if result == -1:
     print('존재하지 않는 문자 입니다.')
+print(result)
 
 s = 'best of best'
 result = s.find('best', 5)

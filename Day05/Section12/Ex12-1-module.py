@@ -6,7 +6,7 @@
 import 모듈명
 '''
 import converter
-miles = converter.kilometer_to_mile(150)
+miles = converter.kilometer_to_miles(150)
 print('150km = {}miles'.format(miles))
 
 pounds = converter.gram_to_pounds(1000)
