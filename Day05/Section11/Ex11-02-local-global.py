@@ -42,4 +42,3 @@ gift(wedding, '이모', 10)  # {'영희': 5, '철수': 10, '이모': 10}
 print('축의금 명단: {}'.format(wedding))
 print('전체 축의금: {}'.format(total))
 
-
